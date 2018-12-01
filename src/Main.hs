@@ -2,6 +2,8 @@ module Main where
 import System.Environment (getArgs)
 import qualified Rosalind.Stronghold.DNA
 import qualified Rosalind.Stronghold.RNA
+import qualified Rosalind.Stronghold.REVC
+import qualified Rosalind.Stronghold.FIB
 
 
 main :: IO ()
@@ -14,5 +16,7 @@ main = do
     solve :: [String] -> IO String
     solve (section:problem:args) = solve' section problem args
 
-    solve' "stronghold" "dna" = Rosalind.Stronghold.DNA.solve
-    solve' "stronghold" "rna" = Rosalind.Stronghold.RNA.solve
+    solve' "stronghold" "dna"  = Rosalind.Stronghold.DNA.solve
+    solve' "stronghold" "rna"  = Rosalind.Stronghold.RNA.solve
+    solve' "stronghold" "revc" = Rosalind.Stronghold.REVC.solve
+    solve' "stronghold" "fib" = Rosalind.Stronghold.FIB.solve
