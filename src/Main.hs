@@ -5,6 +5,8 @@ import qualified Rosalind.Stronghold.RNA
 import qualified Rosalind.Stronghold.REVC
 import qualified Rosalind.Stronghold.FIB
 import qualified Rosalind.Stronghold.GC
+import qualified Rosalind.Stronghold.HAMM
+import qualified Rosalind.Stronghold.IPRB
 
 
 main :: IO ()
@@ -23,3 +25,5 @@ main = do
     solve' "stronghold" "revc" = Rosalind.Stronghold.REVC.solve
     solve' "stronghold" "fib"  = Rosalind.Stronghold.FIB.solve
     solve' "stronghold" "gc"   = Rosalind.Stronghold.GC.solve
+    solve' "stronghold" "hamm" = Rosalind.Stronghold.HAMM.solve
+    solve' "stronghold" "iprb" = Rosalind.Stronghold.IPRB.solve

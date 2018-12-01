@@ -59,6 +59,8 @@ executable rosalind-solutions
                        Rosalind.Stronghold.REVC
                        Rosalind.Stronghold.FIB
                        Rosalind.Stronghold.GC
+                       Rosalind.Stronghold.HAMM
+                       Rosalind.Stronghold.IPRB
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
