@@ -17,6 +17,7 @@ main = do
     solve :: [String] -> IO String
     solve (section:problem:args) = solve' section problem args
 
+    solve' :: String -> String -> [String] -> IO String
     solve' "stronghold" "dna"  = Rosalind.Stronghold.DNA.solve
     solve' "stronghold" "rna"  = Rosalind.Stronghold.RNA.solve
     solve' "stronghold" "revc" = Rosalind.Stronghold.REVC.solve
