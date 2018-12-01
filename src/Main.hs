@@ -7,10 +7,12 @@ import qualified Rosalind.Stronghold.RNA
 main :: IO ()
 main = do
   args <- getArgs
-  result <- solve (head args) (head (tail args)) (tail (tail args))
+  result <- solve args
   putStrLn result
   where
 
-    solve :: String -> String -> [String] -> IO String
-    solve "stronghold" "dna" = Rosalind.Stronghold.DNA.solve
-    solve "stronghold" "rna" = Rosalind.Stronghold.RNA.solve
+    solve :: [String] -> IO String
+    solve (section:problem:args) = solve' section problem args
+
+    solve' "stronghold" "dna" = Rosalind.Stronghold.DNA.solve
+    solve' "stronghold" "rna" = Rosalind.Stronghold.RNA.solve
