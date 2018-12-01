@@ -1,7 +1,11 @@
 # Emacs backup files
 *~
 
-# GHC Artifacts
+# GHC artifacts
 *.o
 *.hi
-/Main
+
+# Cabal artifacts
+/dist/
+/.cabal-sandbox/
+cabal.sandbox.config
