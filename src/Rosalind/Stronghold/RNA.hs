@@ -5,4 +5,4 @@ toRna dna = map subU dna
     subU 'T' = 'U'
     subU c = c
 
-solve args = toRna (head args)
+solve args = return $ toRna (head args)
