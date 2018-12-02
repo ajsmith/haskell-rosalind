@@ -61,12 +61,14 @@ executable rosalind-solutions
                        Rosalind.Stronghold.GC
                        Rosalind.Stronghold.HAMM
                        Rosalind.Stronghold.IPRB
+                       Rosalind.Stronghold.PROT
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
 
   -- Other library packages from which modules are imported.
   build-depends:       base >=4.10 && <4.11,
+                       containers,
                        split
 
   -- Directories containing source files.
