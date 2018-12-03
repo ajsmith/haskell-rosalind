@@ -8,6 +8,7 @@ import qualified Rosalind.Stronghold.GC
 import qualified Rosalind.Stronghold.HAMM
 import qualified Rosalind.Stronghold.IPRB
 import qualified Rosalind.Stronghold.PROT
+import qualified Rosalind.Stronghold.SUBS
 
 
 main :: IO ()
@@ -29,3 +30,4 @@ main = do
     solve' "stronghold" "hamm" = Rosalind.Stronghold.HAMM.solve
     solve' "stronghold" "iprb" = Rosalind.Stronghold.IPRB.solve
     solve' "stronghold" "prot" = Rosalind.Stronghold.PROT.solve
+    solve' "stronghold" "subs" = Rosalind.Stronghold.SUBS.solve
