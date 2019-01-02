@@ -1,6 +1,7 @@
 module Rosalind.Stronghold.GC where
 import Data.List (maximumBy)
 import Data.List.Split (splitOn)
+import Rosalind.FASTA (parse)
 
 
 gcContent (label, dna) = gcContent' 0 0 dna
@@ -16,16 +17,6 @@ gcContent (label, dna) = gcContent' 0 0 dna
 maxGC = maximumBy cmpGC
   where
     cmpGC (l1, x1) (l2, x2) = compare x1 x2
-
-parseFields entry = (label, dna)
-  where
-    ls = words entry
-    label = head ls
-    dna = foldr1 (++) (tail ls)
-
-parseEntries source = [e | e<-(splitOn ">" source), e /= ""]
-
-parse source = [parseFields entry | entry<-(parseEntries source)]
 
 solve args = do
   source <- readFile (head args)

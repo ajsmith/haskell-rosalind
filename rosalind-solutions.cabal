@@ -54,7 +54,8 @@ executable rosalind-solutions
   main-is:             Main.hs
 
   -- Modules included in this executable, other than Main.
-  other-modules:       Rosalind.Stronghold.DNA
+  other-modules:       Rosalind.FASTA
+                       Rosalind.Stronghold.DNA
                        Rosalind.Stronghold.RNA
                        Rosalind.Stronghold.REVC
                        Rosalind.Stronghold.FIB
@@ -63,6 +64,7 @@ executable rosalind-solutions
                        Rosalind.Stronghold.IPRB
                        Rosalind.Stronghold.PROT
                        Rosalind.Stronghold.SUBS
+                       Rosalind.Stronghold.CONS
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
