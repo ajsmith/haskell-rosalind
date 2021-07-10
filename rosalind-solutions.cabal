@@ -65,12 +65,13 @@ executable rosalind-solutions
                        Rosalind.Stronghold.PROT
                        Rosalind.Stronghold.SUBS
                        Rosalind.Stronghold.CONS
+                       Rosalind.Stronghold.FIBD
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
 
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.10 && <4.11,
+  build-depends:       base >=4.10,
                        containers,
                        split
 
