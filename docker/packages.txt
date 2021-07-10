@@ -1,0 +1,5 @@
+cabal-install
+ghc
+ghc-Cabal
+man-db
+man-pages
